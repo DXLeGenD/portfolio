@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  background-color: #34353b;
+}
+
+
+nav {
+  display: flex;
+  background-color: #fec86a;
+  justify-content: flex-end;
+  padding: 15px;
+  position: fixed;
+  font-size: 1.25rem;
+  width: 100%;
+  z-index: 99;
+}
+
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0px 20px;
+}
+
+nav ul li a {
+  color: #2B2A4C;
+  text-decoration: none;
+  transition: all ease 0.5s;
+}
+
+nav ul li a:hover {
+  color: #fbfbfb;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+
+}
+
+.intro h3 {
+  color: #fbfbfb;
+  font-weight: 400;
+  font-size: 32px;
+  margin-left: 10vw;
+}
+
+.intro h3 span {
+  color: #fec86a;
+  font-weight: 600;
+  font-size: 3.5rem;
+}
+
+.intro button {
+  height: 48px;
+  width: 144px;
+  margin-top: 2.5vh;
+  margin-left: 10vw;
+  background-color: transparent;
+  border: 2px solid #fec86a;
+  border-radius: 8px;
+  color: #fec86a;
+  font-size: 16px;
+  transition: all ease 0.5s;
+}
+
+.intro button:hover {
+  background-color: #fec86a;
+  color: #34353b;
+}
+
+.about {
+  height: 50vh;
+  width: 100vw;
+  padding: 0 100px;
+  margin-top: 15%;
+}
+
+.about h1 {
+  font-size: 56px;
+  font-weight: 700;
+  text-align: center;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+
+
+.about .description p {
+  color: #fbfbfb;
+  font-size: 20px;
+}
+
+.about .description p span {
+  color: #fec86a;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 100px;
+}
+
+.skills h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.skill-card {
+  height: 20vw;
+  width: 20vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.skill-card:hover {
+  background-color: #fec86a;
+}
+
+.skill-card img {
+  height: 7.5vw;
+  width: 7.5vw;
+  object-fit: contain;
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #fbfbfb;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+
+.projects h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+}
+
+.projects-cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  gap: 2.5vh;
+}
+
+.projects-card {
+  position: relative;
+  height: 25vw;
+  width: 25vw;
+  background-color: #3d3e42;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5vh;
+  transition: all ease 0.5s;
+}
+
+.projects-card img {
+  position: relative;
+  height: 30vw;
+  width: 30vw;
+  object-fit: cover;
+}
+
+.projects-card .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vh;
+  height: 30vw;
+  width: 30vw;
+  background-color: #34353ba2;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  opacity: 0;
+  transition: all ease 0.5s;
+}
+
+.projects-card .overlay h3 {
+  color: #fbfbfb;
+  font-size: 24px;
+}
+
+.projects-card .overlay p {
+  color: #fbfbfb;
+  font-size: 16px;
+  text-align: center;
+}
+
+.projects-card .overlay button {
+  height: 36px;
+  width: 108px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 12px;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+
+.projects-card .overlay:hover {
+  opacity: 1;
+}
+
+.projects button {
+  margin-top: 50px;
+  height: 48px;
+  width: 144px;
+  background-color: #fec86a;
+  border: 1px solid #fec86a;
+  border-radius: 8px;
+  color: #34353b;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all ease 0.5s;
+}
+
+.projects button:hover {
+  background-color: #cc9e4e;
+}
+
+
+.contact-me {
+  width: 100vw;
+  padding: 100px;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-me h1 {
+  font-size: 56px;
+  color: #fbfbfb;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+}
+
+.contact {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-card {
+  background-color: #fec86a;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+  margin-top: 7.5vh;
+}
