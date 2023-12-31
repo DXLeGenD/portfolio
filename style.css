@@ -194,7 +194,7 @@ nav ul li a:hover {
 
 .projects-card {
   position: relative;
-  height: 25vw;
+  height: 20vw;
   width: 25vw;
   background-color: #3d3e42;
   border-radius: 20px;
@@ -203,31 +203,11 @@ nav ul li a:hover {
   justify-content: center;
   gap: 2.5vh;
   transition: all ease 0.5s;
+  padding: 20px;
 }
 
-.projects-card img {
-  position: relative;
-  height: 30vw;
-  width: 30vw;
-  object-fit: cover;
-}
-
-.projects-card .overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  flex-direction: column;
-  gap: 2.5vh;
-  height: 30vw;
-  width: 30vw;
-  background-color: #34353ba2;
-  align-items: center;
-  justify-content: center;
-  padding: 24px;
-  opacity: 0;
-  transition: all ease 0.5s;
+.projects-card:hover {
+  background-color: #A9A9A9;
 }
 
 .projects-card .overlay h3 {
@@ -239,22 +219,6 @@ nav ul li a:hover {
   color: #fbfbfb;
   font-size: 16px;
   text-align: center;
-}
-
-.projects-card .overlay button {
-  height: 36px;
-  width: 108px;
-  background-color: #fec86a;
-  border: 1px solid #fec86a;
-  border-radius: 8px;
-  color: #34353b;
-  font-size: 12px;
-  transition: all ease 0.5s;
-  cursor: pointer;
-}
-
-.projects-card .overlay:hover {
-  opacity: 1;
 }
 
 .projects button {
