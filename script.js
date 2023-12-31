@@ -40,3 +40,15 @@ function greenGrove() {
     a.target = "_blank"
     a.click()
 }
+
+
+
+const amazon = document.getElementById('amazonClone')
+amazon.addEventListener("click", amazonClone)
+
+function amazonClone() {
+    const a = document.createElement('a')
+    a.href = "https://amazon-home-page-cloned.netlify.app/"
+    a.target = "_blank"
+    a.click()
+}
