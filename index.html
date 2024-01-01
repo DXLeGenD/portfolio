@@ -10,17 +10,29 @@
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#skills-loc">Skills</a></li>
-            <li><a href="#projects-loc">Projects</a></li>
-            <li><a href="#contact-loc">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="intro">
-        <h3>I'M <Span>Arfath</Span><br>Front-End Web Developer</h3><br>
-        <button id="contactMe">Contact Me</button>
+    <header>
+        <nav>
+            <div class="left">Arfath's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#about-loc">About</a></li>
+                    <li><a href="#skills-loc">Skills</a></li>
+                    <li><a href="#projects-loc">Projects</a></li>
+                    <li><a href="#contact-loc">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="firstSection">
+        <div class="leftSection">
+            Hi, My name is <span class="highlight">Arfath</span>
+            <div>and I am a passionated</div>
+            <span id="element"></span>
+
+        </div>
+        <div class="rightSection">
+            <img src="src/images/bg.jpg" alt="">
+        </div>
     </div>
     <section class="about" id="about-loc">
         <h1>About</h1><br>
@@ -29,13 +41,16 @@
                 Leveraging the power of
                 these technologies, I bring digital ideas to life with a keen eye for design and user experience. My
                 journey extends
-                into the realm of Firebase, where I seamlessly integrate the latest web technologies to build dynamic
+                into the realm of Firebase, where I seamlessly integrate the latest web technologies to build
+                dynamic
                 and responsive
                 applications.<br><br>
 
-                Exploring the endless possibilities of web development, I am dedicated to staying at the forefront of
+                Exploring the endless possibilities of web development, I am dedicated to staying at the forefront
+                of
                 emerging
-                technologies, ensuring that my skills are finely tuned to meet the ever-evolving demands of the digital
+                technologies, ensuring that my skills are finely tuned to meet the ever-evolving demands of the
+                digital
                 landscape. Join
                 me on this exciting journey as we turn ideas into captivating web experiences.</p>
         </div>
@@ -88,7 +103,8 @@
             <div class="projects-card">
                 <div class="overlay">
                     <h3>Lost And Found Hub</h3><br>
-                    <p>For Front-End HTML,CSS and JavaScript are used and To store the data Firebase Storage Is used.
+                    <p>For Front-End HTML,CSS and JavaScript are used and To store the data Firebase Storage Is
+                        used.
                     </p>
                     <button id="lostAndFoundHub">Open</button>
                 </div>
@@ -96,7 +112,8 @@
             <div class="projects-card">
                 <div class="overlay">
                     <h3>Green Grove</h3><br>
-                    <p>For Front-End HTML,CSS and JavaScript are used and To store the data Firebase Storage Is used.
+                    <p>For Front-End HTML,CSS and JavaScript are used and To store the data Firebase Storage Is
+                        used.
                     </p>
                     <button id="greenGrove">Open</button>
                 </div>
@@ -149,7 +166,16 @@
             </div>
         </div>
     </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Android Developer', 'Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+
     <script src="script.js"></script>
+
 </body>
 
 </html>

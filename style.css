@@ -15,21 +15,24 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #34353b;
+  background-color: #000732da;
+  color: whitesmoke;
 }
 
 
 nav {
   display: flex;
-  background-color: #fec86a;
-  justify-content: flex-end;
-  padding: 15px;
-  position: fixed;
-  font-size: 1.25rem;
+  background-color: rgb(90 22 161);
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  z-index: 99;
+  height: 70px;
+  padding: 0 100px;
 }
 
+nav>.left {
+  font-size: 1.75rem;
+}
 
 nav ul {
   display: flex;
@@ -41,59 +44,51 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #2B2A4C;
+  color: #f0f0f7;
+  font-size: 1.15rem;
+  padding: 5px 10px;
+  background-color: rgb(90 22 161);
+  border: 2px solid rgb(90 22 161);
+  border-radius: 10px;
   text-decoration: none;
   transition: all ease 0.5s;
 }
 
 nav ul li a:hover {
-  color: #fbfbfb;
+  color: rgb(135, 135, 243);
+  background-color: rgb(125, 42, 214);
+  border-radius: 2px solid rgb(48, 48, 190);
 }
 
-.intro {
+
+.firstSection {
   display: flex;
-  flex-direction: column;
-  position: relative;
-  top: 100px;
+  width: 100%;
+  margin: 80px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.firstSection .leftSection {
+  width: 30%;
+  font-size: 2rem;
+}
+
+.rightSection {
+  width: 30%;
 
 }
 
-.intro h3 {
-  color: #fbfbfb;
-  font-weight: 400;
-  font-size: 32px;
-  margin-left: 10vw;
+.rightSection img {
+  width: 90%;
+  border-radius: 10px;
 }
 
-.intro h3 span {
-  color: #fec86a;
-  font-weight: 600;
-  font-size: 3.5rem;
-}
-
-.intro button {
-  height: 48px;
-  width: 144px;
-  margin-top: 2.5vh;
-  margin-left: 10vw;
-  background-color: transparent;
-  border: 2px solid #fec86a;
-  border-radius: 8px;
-  color: #fec86a;
-  font-size: 16px;
-  transition: all ease 0.5s;
-}
-
-.intro button:hover {
-  background-color: #fec86a;
-  color: #34353b;
-}
 
 .about {
   height: 50vh;
   width: 100vw;
   padding: 0 100px;
-  margin-top: 15%;
 }
 
 .about h1 {
@@ -107,13 +102,15 @@ nav ul li a:hover {
 
 
 .about .description p {
-  color: #fbfbfb;
+  color: #e3bdff;
   font-size: 20px;
+  background-color: #9007f2;
+  border: 2px solid rgb(210, 84, 245);
+  border-radius: 20px;
+  padding: 20px;
+
 }
 
-.about .description p span {
-  color: #fec86a;
-}
 
 .skills {
   display: flex;
@@ -143,7 +140,7 @@ nav ul li a:hover {
 .skill-card {
   height: 20vw;
   width: 20vw;
-  background-color: #3d3e42;
+  background-color: rgb(90 22 161);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -155,7 +152,7 @@ nav ul li a:hover {
 }
 
 .skill-card:hover {
-  background-color: #fec86a;
+  background-color: rgb(144, 53, 242);
 }
 
 .skill-card img {
@@ -190,13 +187,14 @@ nav ul li a:hover {
   grid-template-columns: auto auto auto;
   margin-top: 50px;
   gap: 2.5vh;
+
 }
 
 .projects-card {
   position: relative;
   height: 20vw;
   width: 25vw;
-  background-color: #3d3e42;
+  background-color: rgb(89, 19, 163);
   border-radius: 20px;
   overflow: hidden;
   align-items: center;
@@ -204,10 +202,11 @@ nav ul li a:hover {
   gap: 2.5vh;
   transition: all ease 0.5s;
   padding: 20px;
+
 }
 
 .projects-card:hover {
-  background-color: #A9A9A9;
+  background-color: rgb(144, 53, 242);
 }
 
 .projects-card .overlay h3 {
@@ -225,18 +224,18 @@ nav ul li a:hover {
   margin-top: 50px;
   height: 48px;
   width: 144px;
-  background-color: #fec86a;
   border: 1px solid #fec86a;
   border-radius: 8px;
-  color: #34353b;
   font-size: 16px;
   font-weight: 500;
   cursor: pointer;
+  background: #C21292;
+  color: lavenderblush;
   transition: all ease 0.5s;
 }
 
 .projects button:hover {
-  background-color: #cc9e4e;
+  background-color: #EF4040;
 }
 
 
@@ -252,7 +251,6 @@ nav ul li a:hover {
 
 .contact-me h1 {
   font-size: 56px;
-  color: #fbfbfb;
   font-family: "Libre Baskerville", serif;
   font-weight: 700;
 }
@@ -263,10 +261,17 @@ nav ul li a:hover {
 }
 
 .contact-card {
-  background-color: #fec86a;
+  background: #C21292;
+  color: lavenderblush;
   padding: 10px;
   border-radius: 8px;
   display: flex;
   gap: 10px;
   margin-top: 7.5vh;
+}
+
+
+.highlight,
+#element {
+  color: rgb(161, 82, 235);
 }
