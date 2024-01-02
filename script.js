@@ -22,6 +22,18 @@ function todoList() {
 
 
 
+const netflixVar = document.getElementById('netflix')
+netflixVar.addEventListener("click", netflix)
+
+function netflix() {
+    const a = document.createElement('a')
+    a.href = "https://netflix-clone-by-me-2.netlify.app/"
+    a.target = "_blank"
+    a.click()
+}
+
+
+
 const greenGroves = document.getElementById('greenGrove')
 greenGroves.addEventListener("click", greenGrove)
 
